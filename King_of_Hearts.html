@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>King of Hearts</title>
+	<meta name="viewport" content="width=device-width, inital-scale=1">
+	<style>
+		body{
+			background-color: slategrey;
+			margin:  20px;
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		}
+		h1, h2, h3{
+			text-align: center;
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		}
+		nav ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			display: flex;
+			justify-content: center
+		}
+		nav ul li a {
+			display: block;
+			border: 1px solid;
+			border-radius: .5em;
+			padding: .5em 1em;
+			margin: .5em;
+		}
+			#container{
+			display: grid;
+			grid-template-rows: 100px 400px 100px;	
+			grid-template-columns: 1fr 2fr 1fr;
+			grid-template-areas: 
+				'header header 	header'
+				'ads 	main 	links'
+				'ads 	footer 	footer'
+		}
+	#item1{
+			grid-area: header;	
+			background-color: #F5171B;
+			font-size: 45px;
+			text-align: center;
+		}
+	#item2{
+			grid-area: ads;
+			background-color: maroon;
+			font-size: 45px;
+			text-align: center;
+			grid-column: 1;
+		}
+	#item3{
+			grid-area: main;
+			background-color: darkorange;
+			font-size: 25px;
+			text-align: center;
+		}
+	#item4{
+			grid-area: links;
+			background-color: darkgoldenrod;
+			font-size: 20px;
+			text-align: center;
+		}
+	#item5{
+			grid-area: footer;
+			background-color: #B70E11;
+			font-size: 35px;
+			text-align: center;
+			font-weight: bold;
+			padding: 10px;
+		}
+		
+		#item2,#item3,#item4 {
+			background-color: #BA9913;
+			margin: 10px;
+			padding: 20px;
+			border: 3px solid rgb(57, 79, 94);
+		}
+			td, th {
+			border: 3px solid #870000;
+			
+		}
+		nav{
+			display: flex;
+			align-items: center;
+			list-style: none;
+			background-color: lightgray;
+			padding: .3em;
+			margin: 0;
+		}
+		nav a{
+			color: darkslategrey;
+			padding: 60px 40px;
+			text-decoration: none;
+		}
+@media screen and (min-width: 600px){
+        #item1,#item2,#item3,#item4 {
+			
+			margin: auto;
+			padding: 10px;
+			border: 3px solid rgb(57, 79, 94);
+		}
+		nav{
+			display: flex;
+			align-items: center;
+			list-style: none;
+			background-color: lightgray;
+			padding: .3em;
+			margin: 0;
+		}
+		nav a{
+			color: darkslategrey;
+			padding: 60px 40px;
+			text-decoration: none;
+		}
+
+}
+div {
+    resize: inherit;
+    overflow: auto;
+	img { width: 100%;
+	}
+img {max-width: 100%;
+	height: auto;}
+	</style>
+</head>
+
+		<nav>
+	<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="Spade_Chaos.html">Spade Chaos</a></li>
+	<li><a href="Clover_Chaos.html">Clover Chaos</a></li>
+	<li><a href="Jack_of_Diamonds.html">Jack of Diamonds</a></li>
+	<li><a href="King_of_Hearts.html">King of Hearts</a></li>
+	<li><a href="Gallery.html">Gallery of Chaos</a></li>
+	</ul>
+	</nav>
+<body>
+		<div id="container">
+		<div id="item1">King of Hearts</div>
+		<div id="item2"><img src="King_of_hearts.jpg" width="350" height="400" alt="Red headed boy summoning a scythe from a pocket dimension"></div>
+		<div id="item3"><p>King the youngest of the Chaos siblings, but his attitude says otherwise. With a name like "King" he sees himself as in-charge most of the time. His brother and sister don't mind because they can still be the wild cards and leave "responibility" and "the right thing to do" to King and Spade. While he is often seen on his phone unless the family is planning to take over the city, he may act like he doesn't care about his family but he cares about them a whole lot and secretly likes when they pull him in for group hugs or they are being protective of him. Classic case of "hard on the outside but a big softie on the inside."<br>
+	</p></div>
+		<div id="item4"><table>
+		<tr>
+		<th>Powers</th>
+		<td>chaos magic</td>
+		<td>summoning weapons from his own pocket dimension</td>
+		</tr>
+		<tr>
+		<th>Colors</th>
+		<td>Dark red</td>
+		<td>Gold (to show his royal staus)</td></tr>
+		
+		</table></div>
+		<div id="item5"><footer><a href="https://www.youtube.com/watch?v=juJkNKodgdE">Theme Song</a></footer></div>
+	</div>
+</body>
+</html>
